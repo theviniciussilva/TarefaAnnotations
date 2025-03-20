@@ -1,5 +1,12 @@
 public class Tabela {
+    @AnnotationTabela(value = "getNome")
+    private String nome;
 
-    @AnnotationTabela(value = "Tabela1")
-    private String nomeTabela;
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
